@@ -5,14 +5,14 @@ export const Gender = () => {
   
   
     const API_URL = "http://localhost:3000";
-    const GENDER_ENDPOINT = "gender";
+    const GENDER_ENDPOINT = "genders";
   
     const getGender = async () => {
       const response = await fetch(`${API_URL}/${GENDER_ENDPOINT}`);
       const data = await response.json();
       setGender(data);
     };
-  
+    
     useEffect(() => {
       getGender();
     }, []);

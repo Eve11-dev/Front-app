@@ -24,16 +24,14 @@ function App() {
 
   return (
     <div className="App">
-      <Nav />
-      <h1>Hola mundo react</h1>
-      {products.map((product: any) => (
-        <div key={product.id}>{product.name}</div>
-      ))}
-
+     
+      <h1>Tienda Oline</h1>
+    
       <Category/>
       <Countryes/>
-      <Gender/>
       <Brands/>
+      <Gender/>
+     
 
     </div>
   );

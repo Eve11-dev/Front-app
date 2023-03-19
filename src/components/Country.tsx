@@ -5,12 +5,13 @@ export const Countryes = () => {
   
   
     const API_URL = "http://localhost:3000";
-    const COUNTRY_ENDPOINT = "countryes";
+    const COUNTRY_ENDPOINT = "contryes";
   
     const getCountryes = async () => {
       const response = await fetch(`${API_URL}/${COUNTRY_ENDPOINT}`);
       const data = await response.json();
       setCountryes(data);
+      console.log(data)
     };
   
     useEffect(() => {
